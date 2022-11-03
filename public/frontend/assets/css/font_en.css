@@ -1,0 +1,63 @@
+/* my font en*/
+@font-face {
+  font-family: "MYRIADPROREGULAR";
+  src: url("../font/myriad-pro/MYRIADPRO-REGULAR.OTF");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AkrobatBold";
+  src: url("../font/Akrobat-font/Akrobat-Bold.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AkrobatLight";
+  src: url("../font/Akrobat-font/Akrobat-Light.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AkrobatSemiBold";
+  src: url("../font/Akrobat-font/Akrobat-SemiBold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AkrobatRegular";
+  src: url("../font/Akrobat-font/Akrobat-Regular.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AkrobatExtraBold";
+  src: url("../font/Akrobat-font/Akrobat-ExtraBold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AkrobatBlack";
+  src: url("../font/Akrobat-font/Akrobat-Black.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MYRIADPROLight";
+  src: url("../font/myriad-pro/MyriadPro-Light.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MYRIADPRO-BoldIt";
+  src: url("../font/myriad-pro/MyriadPro-BoldIt.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MYRIADPROSemibold";
+  src: url("../font/myriad-pro/MyriadPro-Semibold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MYRIADPROBoldItalic";
+  src: url("../font/myriad-pro/MyriadPro-BoldIt.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GE-Dinar-One-Medium";
+  src: url("../font/GE-Dinar-One/GE-Dinar-One-Medium.otf");
+  font-display: swap;
+}

@@ -1,0 +1,160 @@
+.img_sigl_page {
+  height: 570px;
+  padding-top: 0;
+  background: url("../images/slider-1.jpg") center 15% no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 6px solid #9ec018;
+}
+
+.img_sigl_page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 60%;
+  mix-blend-mode: multiply;
+}
+
+.hero_container .container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.hero_container .container .frist_row {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.hero_container .img_sec_video {
+  position: absolute;
+  height: 1156px;
+  width: 720;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.hero_container .left_img {
+  top: 50px;
+  left: -900px;
+  -webkit-transform: translateY(-50%) rotate(140deg);
+          transform: translateY(-50%) rotate(140deg);
+  height: 1326px;
+  width: 1326px;
+}
+
+.hero_container .right_img {
+  left: 104%;
+  top: 100px;
+  height: 900px;
+}
+
+.clouds {
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+form .form-grope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "AkrobatLight";
+  margin: 12px 0 0 0;
+  width: 100%;
+}
+
+form .form-grope label {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 60%;
+}
+
+form .form-grope label span {
+  color: #fff;
+}
+
+form .form-grope input, form .form-grope textarea {
+  padding: 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  outline: none;
+  width: 100%;
+}
+
+form .form-grope input::-webkit-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input:-ms-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input::-ms-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #595959;
+  opacity: 30%;
+}
+
+form .form-grope input::placeholder, textarea::placeholder {
+  color: #595959 !important;
+  opacity: 30%;
+  /* font-family: 'AkrobatLight'; */
+}
+form .form-grope input[type=date] {
+  color: #595959 !important;
+}
+
+form button {
+  background-color: #0e5524;
+  color: #fff;
+  padding: 27.5px 50px;
+  margin-left: 20px;
+  max-height: 81px;
+  border: none;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  font-size: 1.3rem;
+  font-family: "AkrobatLight";
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+form button:hover {
+  -webkit-box-shadow: 0 0 10px 0px #9cbe12;
+  box-shadow: 0 0 10px 0px #9cbe12;
+}
+
+/*# sourceMappingURL=singl-page.css.map */

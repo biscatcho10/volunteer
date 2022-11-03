@@ -1,0 +1,16 @@
+{
+    "Dashboard": true,
+    "Accounts": true,
+    "Settings": true,
+    "Frontend": true,
+    "Roles": true,
+    "Backups": false,
+    "Partners": true,
+    "News": true,
+    "Services": true,
+    "Volunteers": true,
+    "HowKnow": true,
+    "Donations": true,
+    "Sliders": true,
+    "Reports": true
+}

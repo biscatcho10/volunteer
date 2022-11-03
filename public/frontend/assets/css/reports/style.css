@@ -1,0 +1,205 @@
+p {
+  font-family: "AkrobatLight";
+}
+
+.hero_container {
+  margin-bottom: -100px;
+}
+
+.clouds.left {
+  left: -400px;
+  top: 275px;
+  height: 100%;
+  width: 1500px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+.clouds.right {
+  right: -300px;
+  bottom: 160px;
+  height: 800px;
+  width: 1200px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+#sectionPDF .text_sec {
+  margin-bottom: 70px;
+}
+#sectionPDF .text_sec h3 {
+  color: #9cbe12;
+  font-size: 2.5rem;
+  font-family: "AkrobatExtraBold";
+  line-height: 1;
+  text-transform: uppercase;
+}
+#sectionPDF .text_sec p {
+  line-height: 1.5;
+  color: #5f5f5f;
+  font-size: 1.17rem;
+  font-family: "AkrobatRegular";
+}
+#sectionPDF .row {
+  row-gap: 80px;
+}
+#sectionPDF .pdfCard {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0;
+  transition: all ease-in-out 0.3s;
+}
+#sectionPDF .pdfCard .top_card {
+  position: relative;
+}
+#sectionPDF .pdfCard .top_card img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#sectionPDF .pdfCard .top_card .text_card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 45px;
+}
+#sectionPDF .pdfCard .top_card .text_card p {
+  margin-bottom: 0;
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+#sectionPDF .pdfCard .top_card .text_card::before {
+  content: "";
+  background-color: rgba(117, 201, 44, 0);
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  transition: all ease-in-out 0.3s;
+  border-radius: 0;
+}
+#sectionPDF .pdfCard:hover .text_card::before {
+  background-color: rgba(117, 201, 44, 0.6);
+}
+#sectionPDF .pdfCard:hover {
+  box-shadow: 0px 5px 20px -2px rgba(127, 127, 127, 0.2);
+}
+#sectionPDF .pdfCard .app_btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 1px;
+       column-gap: 1px;
+  background-color: rgba(153, 153, 153, 0.378);
+}
+#sectionPDF .pdfCard .app_btn a, #sectionPDF .pdfCard .app_btn button {
+  background-color: #fff;
+  border: none;
+  padding: 35px 0px;
+  color: #c3c3c3;
+  font-family: "AkrobatLight";
+  text-transform: uppercase;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sectionPDF .pdfCard .app_btn a:hover {
+  color: #9cbe12;
+}
+#sectionPDF .pdfCard .app_btn button:hover {
+  color: #f19e1e;
+}
+
+.flipbook-preloader, .flipbook-overlay {
+  z-index: 1000000000000000100000 !important;
+}
+
+#Subscribe {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+#Subscribe form {
+  padding: 30px 60px;
+  position: relative;
+}
+#Subscribe form .backgrouend_contact {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+  background-color: #9cbe12;
+  border-radius: 25px;
+  z-index: -1;
+  overflow: hidden;
+}
+#Subscribe form .backgrouend_contact::before {
+  content: "";
+  position: absolute;
+  background: url("../../svg/Subscribe.svg") center;
+  mix-blend-mode: multiply;
+  inset: 0;
+  background-size: 150%;
+  opacity: 30%;
+}
+#Subscribe form .backgrouend_contact::after {
+  content: "";
+  position: absolute;
+  mix-blend-mode: color;
+  inset: 0;
+}
+#Subscribe form .textAndIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+#Subscribe form .textAndIcon svg {
+  width: 95px;
+  margin-right: 25px;
+}
+#Subscribe form .textAndIcon p {
+  font-size: 2.4rem;
+  margin-top: 20px;
+  color: #fff;
+}
+#Subscribe form .app_all_input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+@media all and (max-width: 992px) {
+  #sectionPDF .pdfCard .app_btn a, #sectionPDF .pdfCard .app_btn button {
+    padding: 20px 15px;
+  }
+  #sectionPDF .pdfCard .top_card img {
+    height: 220px;
+  }
+  #sectionPDF .row {
+    row-gap: 50px;
+  }
+}
+@media all and (max-width: 575px) {
+  #sectionPDF .pdfCard .top_card img {
+    height: 50vw;
+  }
+  #sectionPDF .text_sec {
+    margin-bottom: 50px;
+  }
+  #sectionPDF .text_sec p {
+    line-height: 1.2;
+    font-size: 1rem;
+  }
+  #sectionPDF .text_sec h3 {
+    font-size: 2rem;
+  }
+  #sectionPDF .pdfCard .app_btn a, #sectionPDF .pdfCard .app_btn button {
+    padding: 20px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

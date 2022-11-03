@@ -1,0 +1,29 @@
+.hero_container .left_img {
+    left: auto;
+    right: -1060px;
+    transform: translateY(-50%) rotate(-140deg);
+}
+.hero_container .right_img {
+    right: 105%;
+    left: auto;
+}
+
+#volunteer .my_text_left h2 {
+    font-family: "GE-Dinar-One-Bold" !important;
+}
+
+#volunteer .my_text_left span, .singl_question h5,
+#volunteer #questions .singl_question.question_checkbox .singl_checkbox span,
+#volunteer #questions .singl_question .input_ label,
+button {
+    font-family: "GE-Dinar-One-Medium" !important;
+}
+
+#volunteer .app_all_input label {
+    font-family: "GE-Dinar-One-Light" !important;
+}
+
+#volunteer #questions .singl_question.question_checkbox .checkbox {
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}

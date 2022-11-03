@@ -1,0 +1,292 @@
+h2.title {
+  color: #9cbe12;
+  font-size: 3.3rem;
+  font-family: "AkrobatBlack";
+  text-transform: uppercase;
+}
+
+p, span, h5 {
+  color: #5f5f5f;
+  font-family: "AkrobatRegular";
+  line-height: 1.2;
+}
+
+.hero_container {
+  margin-bottom: 140px;
+  z-index: 2;
+}
+
+.hero_container .left_img {
+  top: 850px;
+  left: -800px;
+}
+
+.hero_container .right_img {
+  top: 800px;
+}
+
+#volunteer {
+  padding-bottom: 0;
+  margin-top: 284px;
+}
+#volunteer .my_text_left h2 {
+  font-family: "AkrobatBlack";
+  color: #9cbe12;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  max-width: 600px;
+  line-height: 1;
+}
+#volunteer .my_text_left span {
+  color: #f09f1d;
+  font-size: 2.1rem;
+}
+#volunteer .my_text {
+  color: #fff;
+  font-family: "AkrobatBlack";
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+#volunteer .my_text p {
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: "AkrobatRegular";
+  text-transform: capitalize;
+}
+#volunteer .app_all_input {
+  position: relative;
+  background-color: #9cbe12;
+  padding: 75px 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#volunteer .app_all_input label {
+  font-size: 1.2rem;
+  color: #f4f5f7;
+  opacity: 100%;
+}
+#volunteer #questions .singl_question {
+  margin-top: 80px;
+}
+#volunteer #questions .singl_question h5, #volunteer #questions .singl_question label {
+  font-size: 1.7rem;
+}
+#volunteer #questions .singl_question input[disabled] {
+  flex: auto;
+  transition: all ease-in-out 0.5s;
+  display: block;
+}
+#volunteer #questions .singl_question input[disabled] {
+  opacity: 15%;
+}
+#volunteer #questions .singl_question .input_ label {
+  color: #f09f1d;
+  margin-bottom: -4px;
+  font-family: "AkrobatRegular";
+}
+#volunteer #questions .singl_question.singl_question_text .input_ {
+  margin-top: 40px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: flex-end;
+}
+#volunteer #questions .singl_question input[type=text] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3.5px dotted #f09f1d;
+  flex: 1;
+  outline: none !important;
+  color: #5f5f5f;
+}
+#volunteer #questions .singl_question.question_checkbox:not(.one_column) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#volunteer #questions .singl_question.question_checkbox h5, #volunteer #questions .singl_question.question_checkbox .Other_checkbox {
+  grid-column: span 2;
+}
+#volunteer #questions .singl_question.question_checkbox .Other_checkbox > span {
+  color: #9cbe12 !important;
+}
+#volunteer #questions .singl_question.question_checkbox .Other_checkbox .inp_Other {
+  flex: auto;
+  transition: all ease-in-out 0.5s;
+  display: block;
+}
+#volunteer #questions .singl_question.question_checkbox .Other_checkbox .inp_Other[disabled] {
+  opacity: 15%;
+}
+#volunteer #questions .singl_question.question_checkbox .singl_checkbox {
+  margin-top: 20px;
+}
+#volunteer #questions .singl_question.question_checkbox .singl_checkbox span {
+  color: #f09f1d;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox {
+  --background: transparent;
+  --border: #f09f1d;
+  --border-hover: #f09f1d;
+  --border-active: #f09f1d;
+  --tick: #fff;
+  position: relative;
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox input,
+#volunteer #questions .singl_question.question_checkbox .checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  box-shadow: inset 0 0 0 var(--s, 1.5px) var(--b, var(--border));
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox input:checked {
+  --b: var(--border-active);
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  transform: scale(var(--scale, 1)) translateZ(0);
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox.bounce {
+  --stroke: var(--tick);
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox.bounce input:checked {
+  --s: 11px;
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox.bounce input:checked + svg {
+  -webkit-animation: bounce 0.4s linear forwards 0.2s;
+          animation: bounce 0.4s linear forwards 0.2s;
+}
+#volunteer #questions .singl_question.question_checkbox .checkbox.bounce svg {
+  --scale: 0;
+}
+@-webkit-keyframes bounce {
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#volunteer button {
+  margin-top: 80px;
+  margin-left: 0;
+  display: block;
+  background-color: #faa326;
+  color: #fff;
+  height: 72px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+body[dirPage="1"] .hero_container .left_img {
+  left: auto;
+  right: -1060px;
+  transform: translateY(-50%) rotate(-140deg);
+}
+body[dirPage="1"] .hero_container .right_img {
+  right: 105%;
+  left: auto;
+}
+body[dirPage="1"] #volunteer .my_text_left h2 {
+  font-family: "GE-Dinar-One-Bold" !important;
+}
+body[dirPage="1"] #volunteer .my_text_left span, body[dirPage="1"] .singl_question h5,
+body[dirPage="1"] #volunteer #questions .singl_question.question_checkbox .singl_checkbox span,
+body[dirPage="1"] #volunteer #questions .singl_question .input_ label,
+body[dirPage="1"] button {
+  font-family: "GE-Dinar-One-Medium" !important;
+}
+body[dirPage="1"] #volunteer .app_all_input label {
+  font-family: "GE-Dinar-One-Light" !important;
+}
+
+@media all and (max-width: 991px) {
+  #volunteer .app_all_input {
+    grid-template-columns: 1fr;
+  }
+  .hero_container .left_img {
+    top: 750px;
+    left: -700px;
+    transform: translateY(-50%) rotate(140deg) scale(1.5);
+  }
+  #volunteer {
+    margin-top: 230px;
+  }
+}
+@media all and (max-width: 575px) {
+  #volunteer {
+    margin-top: 160px;
+  }
+  #volunteer .app_all_input {
+    padding: 40px 40px;
+  }
+  form .form-grope input, form .form-grope textarea {
+    padding: 20px;
+  }
+  #volunteer #questions .singl_question.question_checkbox:not(.one_column) {
+    grid-template-columns: 1fr;
+  }
+  #volunteer #questions .singl_question.question_checkbox h5, #volunteer #questions .singl_question.question_checkbox .Other_checkbox {
+    grid-column: span 1;
+  }
+  #volunteer .my_text_left h2 {
+    font-size: 2rem;
+  }
+  #volunteer .my_text_left span {
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=style.css.map */

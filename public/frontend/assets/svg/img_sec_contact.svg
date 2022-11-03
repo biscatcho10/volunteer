@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="OBJECTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 452 402" style="enable-background:new 0 0 452 402;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.3;fill:url(#SVGID_1_);}
+	.st1{opacity:0.45;fill:url(#SVGID_2_);}
+	.st2{opacity:0.4;}
+	.st3{fill:#FFFFFF;}
+	.st4{opacity:0.6;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:0.49;stroke-miterlimit:10;}
+	.st6{opacity:0.6;fill:#FFFFFF;}
+	.st7{opacity:0.6;fill:none;stroke:#FFFFFF;stroke-width:0.49;stroke-miterlimit:10;}
+	.st8{opacity:0.45;fill:url(#SVGID_3_);}
+	.st9{opacity:0.3;fill:url(#SVGID_4_);}
+	.st10{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.49;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="204.7967" y1="254.1179" x2="216.4904" y2="387.7768">
+	<stop  offset="0" style="stop-color:#2390FF"/>
+	<stop  offset="0.9146" style="stop-color:#2390FF;stop-opacity:0"/>
+</linearGradient>
+<path class="st0" d="M10.2,297.5c14.2-13.7,37.4-22.5,59.1-18.3c14.9,2.9,28.3,9.7,41.9,15.4c13.7,5.8,28.7,10.7,43.9,9.3
+	c33.4-3.1,54.4-34.3,87.4-39.2c35.2-5.2,71.8,21.3,104.6,9.6c23.7-8.5,35.4-34.4,60.9-38V371H10.2V297.5z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="211.7665" y1="393.1433" x2="211.7665" y2="280.0993">
+	<stop  offset="8.544150e-02" style="stop-color:#2390FF;stop-opacity:0"/>
+	<stop  offset="1" style="stop-color:#2390FF"/>
+</linearGradient>
+<path class="st1" d="M41.2,307.6c18.3,3,28.5-0.1,43.7-8.3c10.2-5.5,18.9-13.4,31-15.8c14.9-2.9,30.3,3.4,41.7,11.1
+	c11.5,7.7,21.2,17.1,34.7,22.7c28,11.5,63.8,2.9,89.1-11.8c10.9-6.4,20.8-13.8,32.7-19.1s26.7-8.2,39.6-4.6
+	c10.6,3,18.5,9.9,28.6,13.8v97.7H41.2V307.6z"/>
+<g class="st2">
+	<circle class="st3" cx="277.5" cy="254.9" r="2.3"/>
+	<circle class="st3" cx="126.8" cy="315.4" r="1.2"/>
+	<circle class="st3" cx="320.5" cy="252.1" r="2.5"/>
+	<circle class="st3" cx="138" cy="297.1" r="2.8"/>
+	<circle class="st3" cx="313.6" cy="272.4" r="1.4"/>
+	<circle class="st3" cx="343.1" cy="179.6" r="0.8"/>
+	<circle class="st3" cx="165.6" cy="274.4" r="0.8"/>
+	<circle class="st3" cx="90.8" cy="260" r="1.7"/>
+	<circle class="st3" cx="322.5" cy="202.1" r="0.8"/>
+</g>
+<g class="st4">
+	<g>
+		<line class="st5" x1="20.1" y1="354.7" x2="148" y2="226.8"/>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -244.7731 118.1633)" class="st3" cx="20.2" cy="354.5" rx="2.9" ry="2.9"/>
+		</g>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -117.0814 171.0549)" class="st3" cx="147.9" cy="226.9" rx="2.9" ry="2.9"/>
+		</g>
+	</g>
+</g>
+<g class="st4">
+	<g>
+		<line class="st5" x1="288.1" y1="351.9" x2="392" y2="247.9"/>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.316 306.8239)" class="st3" cx="288.2" cy="351.8" rx="2.9" ry="2.9"/>
+		</g>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -60.5929 349.7887)" class="st3" cx="391.9" cy="248" rx="2.9" ry="2.9"/>
+		</g>
+	</g>
+</g>
+<g class="st4">
+	<g>
+		<line class="st5" x1="305.7" y1="366.2" x2="409.6" y2="262.3"/>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -169.3248 323.4769)" class="st3" cx="305.8" cy="366.1" rx="2.9" ry="2.9"/>
+		</g>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -65.6036 366.433)" class="st3" cx="409.5" cy="262.4" rx="2.9" ry="2.9"/>
+		</g>
+	</g>
+</g>
+<g class="st4">
+	<g>
+		<line class="st5" x1="42.1" y1="367.7" x2="134.8" y2="275"/>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -247.5692 137.5206)" class="st3" cx="42.2" cy="367.6" rx="2.9" ry="2.9"/>
+		</g>
+		<g>
+			
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -155.0667 175.8417)" class="st3" cx="134.7" cy="275.1" rx="2.9" ry="2.9"/>
+		</g>
+	</g>
+</g>
+<g>
+	<circle class="st6" cx="293.7" cy="273" r="6.9"/>
+	<circle class="st7" cx="293.7" cy="273" r="13.6"/>
+</g>
+<path class="st3" d="M226.7,169.1h-18.3c-0.9,0-1.7-0.8-1.7-1.7l0,0c0-0.9,0.8-1.7,1.7-1.7h18.3c0.9,0,1.7,0.8,1.7,1.7l0,0
+	C228.4,168.4,227.6,169.1,226.7,169.1z"/>
+<g>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="9933.3955" y1="-5196.2695" x2="9933.3955" y2="-5341.5752" gradientTransform="matrix(-1 0 0 -1 10145.1611 -5225.2373)">
+		<stop  offset="8.544150e-02" style="stop-color:#2390FF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#2390FF"/>
+	</linearGradient>
+	<path class="st8" d="M382.3,61.8c-18.3-6-28.5,0.2-43.7,16.5c-10.2,11-18.9,26.6-31,31.3c-14.9,5.8-30.3-6.7-41.7-22
+		c-11.5-15.3-21.2-34-34.7-45c-28-22.9-63.8-5.7-89.1,23.5c-10.9,12.6-20.8,27.4-32.7,37.9c-11.9,10.5-26.7,16.3-39.6,9.1
+		c-10.6-5.9-18.5-19.7-28.6-27.3V-29h341.1V61.8z"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="254.1738" y1="-5229.5601" x2="254.1738" y2="-5315.2681" gradientTransform="matrix(1 0 0 -1 0 -5225.2373)">
+		<stop  offset="0" style="stop-color:#2390FF"/>
+		<stop  offset="0.9146" style="stop-color:#2390FF;stop-opacity:0"/>
+	</linearGradient>
+	<path class="st9" d="M60.8,47.7c20.8-4.6,32.3,0.1,49.6,12.8c11.6,8.5,21.4,20.6,35.2,24.3c16.9,4.5,34.3-5.2,47.3-17
+		c13-11.8,24-26.3,39.3-34.9c31.7-17.8,72.4-4.4,101,18.2c12.4,9.8,23.6,21.3,37,29.4c13.5,8.1,30.2,12.7,44.9,7.1
+		c12.1-4.6,20.9-15.3,32.4-21.2v-62H60.8V47.7z"/>
+	<circle class="st3" cx="111.5" cy="86.5" r="2.3"/>
+	<circle class="st3" cx="115.2" cy="71.1" r="1.4"/>
+	<circle class="st3" cx="85" cy="79.4" r="0.8"/>
+	<g class="st4">
+		<g>
+			<line class="st5" x1="319" y1="142" x2="423" y2="38.1"/>
+			<g>
+				
+					<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.8592 267.2245)" class="st3" cx="319.1" cy="141.9" rx="2.9" ry="2.9"/>
+			</g>
+			<g>
+				
+					<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 96.862 310.1864)" class="st3" cx="422.9" cy="38.2" rx="2.9" ry="2.9"/>
+			</g>
+		</g>
+	</g>
+	<g class="st4">
+		<g>
+			<line class="st5" x1="142" y1="132.8" x2="301.7" y2="-27"/>
+			<g>
+				
+					<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -52.2263 139.3156)" class="st3" cx="142.1" cy="132.7" rx="2.9" ry="2.9"/>
+			</g>
+			<g>
+				
+					<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 107.3591 205.4177)" class="st3" cx="301.6" cy="-26.9" rx="2.9" ry="2.9"/>
+			</g>
+		</g>
+	</g>
+	<g class="st4">
+		<g>
+			<line class="st5" x1="213.8" y1="81.1" x2="373.6" y2="-78.7"/>
+			<g>
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 5.3794 174.9592)" class="st3" cx="213.9" cy="81" rx="2.9" ry="2.9"/>
+			</g>
+			<g>
+				
+					<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 164.9632 241.0609)" class="st3" cx="373.5" cy="-78.6" rx="2.9" ry="2.9"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<circle class="st6" cx="94.8" cy="115.6" r="6.9"/>
+		<circle class="st7" cx="94.8" cy="115.6" r="13.6"/>
+	</g>
+	<ellipse transform="matrix(0.8804 -0.4742 0.4742 0.8804 20.0123 150.4567)" class="st6" cx="308.3" cy="35.6" rx="9.8" ry="9.8"/>
+	<circle class="st7" cx="308.3" cy="35.6" r="14.8"/>
+	<g>
+		<g>
+			<circle class="st5" cx="89.4" cy="45.8" r="5.1"/>
+			<circle class="st5" cx="89.4" cy="45.8" r="3.2"/>
+			<circle class="st10" cx="89.4" cy="45.8" r="1.2"/>
+		</g>
+	</g>
+</g>
+</svg>

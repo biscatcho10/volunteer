@@ -1,0 +1,217 @@
+
+/* start font Light  */
+/* header > .container > .row nav .logo svg text,
+.logo_footer svg text,.sec_title p,
+#latest_news .card p ,
+header > .container > .row .sub_header .language_switcher *,.hero-slider .owl-dots .owl-dot .num_page  {
+  font-family: "GE-Dinar-One-Light" !important;
+} */
+/* start font Medium  */
+/* p,
+.G_join a,
+.card .card-body h5,
+.card .card-body a.btn,
+.hero-slider .owl-dots::before,
+.hero-slider .content_text h2,
+.sec_title h4,
+#latest_news .card *,
+.app_all_input *,
+header > .container > .row nav .links ul li a,#latest_news .card .footer_card a::before{
+  font-family: "GE-Dinar-One-Medium" !important;
+} */
+/* start font Bold  */
+/* h3,
+#break a span,
+#volunteering h2,
+#break_two .container h4,
+#contact .text_contact h4 {
+  font-family: "GE-Dinar-One-Bold" !important;
+} */
+
+/* start arabic font page home  */
+.break_text p,#slider_card .text_sec p,
+#latest_news .card p {
+  font-family: "GE-Dinar-One-Light" , "AkrobatRegular" !important;
+}
+/* start font Medium page home */
+.G_join a,
+.card .card-body h5,
+.card .card-body a.btn,
+.hero-slider .owl-dots::before,
+.hero-slider .content_text h2,
+#latest_news .card * {
+  font-family: "GE-Dinar-One-Medium" !important;
+}
+/* start font Bold  */
+#break a span,
+#volunteering h2,
+#break_two .container h4,
+#contact .text_contact h4 {
+  font-family: "GE-Dinar-One-Bold" !important;
+}
+.hero_container .left_img {
+  left: auto;
+  right: -860px;
+  transform: translateY(-50%) rotate(-140deg);
+}
+.hero_container .right_img {
+  right: 90%;
+  left: auto;
+}
+.sec_title {
+  margin-bottom: 30px;
+}
+#break_two::before,
+#contact::before {
+  transform: rotateY(180deg);
+}
+
+/*-------------------------------------------------------------------------------
+ hero slider swiper
+-------------------------------------------------------------------------------*/
+.owl-stage-outer {
+  right: 0;
+}
+.hero-slider .content_text .row {
+  justify-content: start;
+}
+.app_card_top .bigCardTopHero::before {
+  left: 0;
+  right: 90%;
+}
+.app_card_top .bigCardTopHero::after {
+  left: auto;
+  right: 0;
+}
+.app_card_top .bigCardTopHero {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  margin-right: auto;
+  margin-left: 0;
+}
+#slider_card .text_sec h3 {
+  line-height: 1.3;
+}
+.app_card_top .bigCardTopHero .col-lg-2 {
+  border-right: 0.1px solid rgba(0, 0, 0, 0.078);
+}
+.app_card_top .bigCardTopHero .col-lg-2:first-child {
+  border-right: 0px solid rgba(0, 0, 0, 0.078);
+}
+.hero-slider .owl-dots .owl-dot .num_page {
+  direction: ltr;
+  text-align: right;
+}
+.app_card_top .bigCardTopHero span {
+  font-family: "GE-Dinar-One-Light" , "AkrobatRegular" ;
+}
+.app_card_top .bigCardTopHero .col-md-2:not(.not_line) .singl_card::after {
+    right: auto;
+    left: -15px;
+}
+/*-------------------------------------------------------------------------------
+ sec video
+-------------------------------------------------------------------------------*/
+#myVideo .content_myVideo {
+  border-radius: 20px 230px 230px 20px;
+}
+#myVideo .content_myVideo .video .p_video {
+  right: 92%;
+}
+#myVideo .content_myVideo .video .border_video::before {
+  left: 0.2px;
+}
+#myVideo .content_myVideo .conent_text {
+  padding-left: 0px;
+  padding-right: 50px;
+}
+#myVideo .content_myVideo .conent_text h3 {
+  font-family: "GE-Dinar-One-Bold";
+  font-size: 2.4rem;
+  width: 52%;
+  padding-right: 30px;
+}
+#myVideo .content_myVideo .conent_text p {
+  font-size: 1.23rem;
+  width: 45%;
+  color: #fff;
+  line-height: 27px;
+}
+/*-------------------------------------------------------------------------------
+  break one
+-------------------------------------------------------------------------------*/
+.break_text p {
+  transform: translateX(410px);
+}
+#break .container .row::before {
+  right: 0;
+  left: auto;
+}
+#break h2 span {
+  line-height: 90px;
+}
+.break_text p {
+  text-align: right;
+}
+/*-------------------------------------------------------------------------------
+  logo slider
+-------------------------------------------------------------------------------*/
+.sec_title p {
+  color: #5d5b5b;
+}
+/*-------------------------------------------------------------------------------
+  volunteering
+-------------------------------------------------------------------------------*/
+#volunteering h2 {
+    line-height: 1.2;
+}
+#volunteering svg{
+  margin-top: -25px;
+}
+/*-------------------------------------------------------------------------------
+  break two
+-------------------------------------------------------------------------------*/
+#break_two .app_img_break_two {
+  left: 0;
+  right: auto;
+}
+#break_two .img_break_two {
+  border-radius: 0 15px 15px 0;
+}
+#break_two .img_break_two .app_icon {
+  left: auto;
+  right: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+}
+#break_two .img_break_two .app_icon p {
+  margin-right: 10px;
+  line-height: 37px;
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+#break_two .container p,
+#break_two .img_break_two .app_icon p,
+.card .card-body p {
+  font-family: "GE-Dinar-One-light" , "AkrobatRegular"  !important;
+}
+
+/*-------------------------------------------------------------------------------
+  card section
+-------------------------------------------------------------------------------*/
+#latest_news .card .footer_card a::before {
+  content: "إعرف اكتر";
+}
+/*-------------------------------------------------------------------------------
+  contact us section
+-------------------------------------------------------------------------------*/
+
+#contact .text_contact h4 {
+  line-height: 85px;
+  color: #696767;
+  font-size: 3.5rem;
+}
+#contact form .form-grope input{
+  font-family: "GE-Dinar-One-Light" , "AkrobatRegular"  !important;
+}
+

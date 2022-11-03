@@ -1,0 +1,28 @@
+/* loction page */
+.loction_page {
+    text-align: right;
+}
+.loction_page .link_location li:last-child {
+    border-right: 1px solid #9ec018;
+    border-left: 0px solid #9ec018;
+}
+.loction_page .link_location li:first-child {
+    border-left: 1px solid #9ec018;
+    border-right: 2px solid #9ec018;
+}
+.loction_page h5 {
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+/* section mission  */
+/* #missionAndObjectives h2.title {
+    text-align: left;
+} */
+
+#APEAwards .singl_card:nth-child(2n+2)::after {
+    right: -35px;
+}
+
+
+

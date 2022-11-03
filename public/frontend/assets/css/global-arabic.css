@@ -1,0 +1,267 @@
+body {
+    direction: rtl;
+    text-align: right !important;
+}
+/* start font Light  */
+p{
+    line-height: 1 !important;
+}
+p,.editor_,
+#Subscribe form .form-grope label,
+header > .container > .row nav .logo svg text,
+.logo_footer svg text,.sec_title p,
+.hero-slider .owl-dots .owl-dot .num_page ,#videoAbout .content_myVideo .text_sec h4,#APEAwards .singl_card h4
+,#contact .content_left .my_text_left span,#contact .content_right .my_text p,
+.description_service * {
+  font-family: "GE-Dinar-One-Light" , "AkrobatRegular" !important;
+  line-height: 1.2 !important;
+}
+/* start font Medium  */
+
+.sec_title h4,
+#news_ .left_section span,
+.app_all_input *,
+header > .container > .row nav .links ul li a,#latest_news .card .footer_card a::before,
+.singl_icon span,.card .card-body a.btn,.loction_page ,#media .singl .content_ .text_title,
+.Pagination,#sectionPDF .pdfCard .app_btn a, #sectionPDF .pdfCard .app_btn button #media .singl .text_sec h3,
+header > .container > .row .sub_header .language_switcher *,
+#sectionPDF .pdfCard .app_btn a, #sectionPDF .pdfCard .app_btn button{
+  font-family: "GE-Dinar-One-Medium" , "AkrobatRegular" !important;
+  line-height: 1.2 !important;
+}
+/* start font Bold  */
+h3, h2.title,#contact .content_left .my_text_left h2,#singl_services .text_sec .title_ {
+  font-family: "GE-Dinar-One-Bold" , "AkrobatRegular" !important;
+  line-height: 1.2 !important;
+}
+.singl_icon span {
+  margin-left: 0;
+  margin-right: 20px;
+}
+#Subscribe form .form-grope label{
+    padding-top: 5px;
+}
+#Subscribe form button{
+    margin-left: 0;
+    margin-right: 20px;
+}
+header > .container > .row nav .logo svg text,
+.logo_footer svg text,.sec_title p {
+  direction: ltr;
+}
+header > .container > .row .sub_header .ema_cont a,
+header > .container > .row .sub_header .language_switcher .en_font,
+footer .container .row .content_footer .singl p,
+form .form-grope input[type=date] {
+  font-family: "AkrobatRegular" !important;
+}
+#Subscribe form .form-grope input {
+    height: 75px;
+    padding: 0 25px;
+}
+#Subscribe form button{
+    height: 75px !important;
+    padding: 0;
+}
+#Subscribe form .textAndIcon svg {
+    margin-right: 0;
+    margin-left: 25px;
+}
+/* Header */
+header > .container > .row .top_header p {
+  font-weight: 100;
+}
+header > .container > .row nav .links ul {
+  /* justify-content: flex-start;
+  column-gap: 40px; */
+}
+header > .container > .row nav .links ul li a {
+  font-size: 1.05rem;
+}
+header > .container > .row .sub_header,
+header > .container > .row .top_header {
+  padding-right: 0px;
+  padding-left: 60px;
+}
+header > .container > .row .content_right {
+  width: 70.5%;
+}
+header > .container > .row .sub_header .language_switcher .language_select {
+  /* left: 0; */
+  right: auto;
+}
+header > .container > .row .sub_header {
+  border-bottom-left-radius: 20px;
+}
+header > .container > .row .sub_header .ema_cont svg {
+  margin-right: 0px;
+  margin-left: 6px;
+}
+header > .container > .row .sub_header .language_switcher .language_select a:last-child{
+    font-family: "AkrobatRegular" !important;
+}
+header::before {
+  left: auto;
+  right: 0;
+}
+header > .container > .row nav .container {
+  padding-left: 0 !important;
+  /* padding-right: 15px !important; */
+  padding-right: 0px !important;
+}
+header > .container > .row nav .links {
+  border-radius: 0 80px 80px 0;
+  padding: 0px 80px 0px 65px;
+}
+header > .container > .row nav .links ul li {
+  /* margin-left: 0px;
+  margin-right: 30px; */
+}
+header > .container > .row nav .links ul li a::after{
+  left: auto;
+  right: 0;
+}
+header > .container > .row .sub_header .language_switcher{
+  padding-left: 0;
+}
+header #scroll_bar {
+  transform: none;
+}
+header > .container .beffor_effict {
+  left: auto;
+  right: 95%;
+}
+header > .container > .row nav .links ul li:not(:last-child) {
+  padding: 10px;
+  padding-right: 0;
+}
+header > .container > .row nav .links ul li:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* .h_top_2 nav .links {
+  right: ;
+} */
+body[dirPage='1'] .h_top_2 nav .links{
+  padding-left: 20px !important;
+}
+
+.Pagination ul li:last-child::after {
+    clip-path: polygon(100% 0%, 35% 50%, 100% 100%, 85% 100%, 15% 50%, 85% 0);
+}
+.Pagination ul li:first-child::after {
+    clip-path: polygon(15% 0, 85% 49%, 15% 100%, 0% 100%, 65% 50%, 0% 0%);
+}
+.Pagination ul li {
+    padding-top: 2px;
+}
+
+/* footer  */
+footer .content_footer * {
+  font-family: "GE-Dinar-One-Light" !important;
+}
+footer .container .row .Copy_Right p a {
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+
+@media all and (max-width: 1500px) {
+  header:not(.h_top_2) > .container > .row nav:not(.fixed_nav) .links {
+    /* padding: 0px 35px 0px 65px !important; */
+    /* padding: 0px 50px 0px 35px; */
+    padding: 0px 50px 0px 40px;
+  }
+  header > .container > .row .sub_header,
+  header > .container > .row .top_header {
+      padding-left: 35px;
+  }
+  header > .container > .row .content_right {
+      width: 72.5%;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  header .container > .row nav .links ul li a {
+      font-size: 1rem;
+  }
+  header > .container > .row nav.fixed_nav .links {
+      width: 70%;
+  }
+  /* header > .container > .row .sub_header, header > .container > .row .top_header,
+  header:not(.h_top_2) > .container > .row nav:not(.fixed_nav) .links {
+      padding-left: 0px !important;
+  }
+  header:not(.h_top_2) > .container > .row nav:not(.fixed_nav) .links {
+      padding-right: 55px !important;
+  } */
+}
+
+@media all and (max-width: 991px){
+    #Subscribe form button{
+        margin-right: 0;
+        }
+  header > .container > .row nav, .beffor_effict {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 20px;
+  }
+  header > .container > .row nav {
+      padding: 35px 0px 35px 35px;
+  }
+  header > .container > .row nav .logo {
+    width: 190px;
+  }
+  header > .container > .row .sub_header, header > .container > .row .top_header {
+      position: absolute;
+      right: auto;
+      left: 35px;
+  }
+  /* .h_top > .container > .row nav .links {
+    right: 20px;
+  } */
+  header.h_top > .container > .row nav {
+    padding-left: 0px;
+  }
+  header > .container > .row nav .links {
+    padding: 0 !important;
+    left: 0;
+    right: auto !important;
+  }
+
+  header.h_top > .container > .row .sub_header, header.h_top > .container > .row .top_header {
+    right: auto;
+    left: 0;
+  }
+
+  header > .container > .row .sub_header, header > .container > .row .top_header {
+    padding-left: 0px;
+  }
+  body[dirPage='1'] .h_top_2 nav .links {
+      padding-left: 0px !important;
+  }
+}
+
+@media all and (max-width: 767px){
+  header > .container > .row nav.fixed_nav .links {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 575px){
+  header > .container > .row nav .logo {
+    width: 145px;
+  }
+  header > .container > .row nav .links {
+    left: 35px;
+  }
+  .h_top > .container > .row nav .links {
+    left: 0px;
+  }
+}
+
+@media all and (max-width: 400px){
+  header > .container > .row nav .logo {
+    width: 145px;
+  }
+}

@@ -1,0 +1,51 @@
+@media all and (max-width: 1500px) {
+    .hero-slider .content_text .row {
+        width: 93%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+    #volunteering .row > div:first-child {
+        left: 52%;
+        right: auto;
+    }
+    #contact form .backgrouend_contact .textAndIcon svg {
+        margin-right: 0px;
+    }
+}
+@media all and (max-width: 1199px) {
+    #break .break_content .break_text {
+        right: 110px;
+        left: auto;
+    }
+    .app_card_top .bigCardTopHero::after {
+        right: -300px;
+    }
+}
+@media all and (max-width: 991px){
+    /* sec Video */
+    #myVideo .content_myVideo .video .p_video {
+        right: 50%;
+        left: auto;
+        transform: translate(50%, -50%);
+    }
+    #myVideo .content_myVideo .conent_text h3,#myVideo .content_myVideo .conent_text {
+        padding-right: 0;
+    }
+    
+    /* sec slider card  */
+    .slider-items.owl-carousel .owl-stage, .slider-items-latest_.owl-carousel .owl-stage {
+        margin-right: -100px;
+        margin-left: 0;
+    }
+}
+@media all and (max-width: 767px){
+    .slider-items.owl-carousel .owl-stage, .slider-items-latest_.owl-carousel .owl-stage {
+        margin-right: 0px;
+    }
+}
+@media all and (max-width: 575px){
+    html body div p {
+        line-height: 1.3 !important;
+        font-size: 1.1rem !important;
+    }
+}

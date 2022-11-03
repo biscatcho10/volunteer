@@ -1,0 +1,17 @@
+/* my font ar*/
+@font-face {
+    font-family: "GE-Dinar-One-Light";
+    src: url("../font/GE-Dinar-One/GE-Dinar-One-Light.otf");
+}
+@font-face {
+    font-family: "GE-Dinar-One-Medium";
+    src: url("../font/GE-Dinar-One/GE-Dinar-One-Medium.otf");
+}
+@font-face {
+    font-family: "GE-Dinar-One-Bold";
+    src: url("../font/GE-Dinar-One/GE-Dinar-One-Bold.otf");
+}
+@font-face {
+    font-family: "AkrobatRegular";
+    src: url("../font/Akrobat-font/Akrobat-Regular.otf");
+}

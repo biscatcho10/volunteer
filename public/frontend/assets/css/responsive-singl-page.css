@@ -1,0 +1,70 @@
+/*-------------------------------------------------------------------------------
+  start responsive page home
+-------------------------------------------------------------------------------*/
+@media all and (max-width: 1199px) {
+    div.text_sec > * {
+        width: 100%;
+        max-width: none;
+        flex: 1;
+    }
+    div.text_sec{
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* align-i3tems: start !important; */
+    }
+    .img_sigl_page {
+        height: 500px;
+    }
+    #Subscribe form .textAndIcon p {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    #Subscribe form .form-grope input {
+        padding: 20px 25px;
+        font-size: 1.3rem;
+    }
+    #Subscribe form button {
+        padding: 22px 50px;
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width: 991px){
+    #Subscribe form .app_all_input {
+        grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    }
+    #Subscribe form button {
+        margin-left: 0;
+    }
+    .img_sigl_page {
+        height: 400px;
+    }
+}
+@media all and (max-width: 767px){
+    .card img:not(.icons) {
+        height: auto;
+    }
+}
+@media all and (max-width: 575px){
+    #Subscribe form .textAndIcon p {
+        font-size: 1.2rem;
+    }
+    h2.title {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+@media all and (max-width: 400px){
+    .singl_icon span {
+        font-size: 1.2rem;
+    }
+    #Subscribe form {
+        padding: 30px;
+    }
+    h2.title {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .text_sec h3 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,201 @@
+
+h2.title {
+  font-family: "AkrobatBlack";
+  color: #474747;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+p {
+  font-size: 1.1rem;
+  color: #464646;
+  font-family: "AkrobatLight";
+  line-height: 1.2;
+}
+.clouds {
+  position: absolute;
+  transform: rotateY(180deg);
+  opacity: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section {
+  padding-bottom: 0;
+}
+// satrt hero container section
+.hero_container {
+  margin-top: 200px;
+}
+.hero_container .left_img {
+  left: -980px;
+  top: 700px;
+  -webkit-transform: translateY(-50%) rotate(125deg);
+  transform: translateY(-50%) rotate(125deg);
+}
+
+.hero_container .right_img {
+  left: 104%;
+  top: 600px;
+  height: 900px;
+}
+
+#news_ {
+  padding-top: 90px;
+  .left_section {
+    span {
+      font-size: 1.5rem;
+      color: #9cbe12;
+      font-family: "AkrobatSemiBold";
+    }
+  }
+  .perantImg {
+    height: 100%;
+    border-radius: 20px 20px 0 0 ;
+    overflow: hidden;
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// start section Subscribe
+#Subscribe {
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 2;
+  form {
+    padding: 30px 60px;
+    position: relative;
+    .backgrouend_contact {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0px;
+      bottom: 0px;
+      background-color: #9cbe12;
+      border-radius: 25px;
+      z-index: -1;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("../../svg/Subscribe.svg") center;
+        mix-blend-mode: multiply;
+        inset: 0;
+        background-size: 150%;
+        opacity: 30%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        // background-color: #f2b50d;
+        mix-blend-mode: color;
+        inset: 0;
+      }
+    }
+    .textAndIcon {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100px;
+      width: 100%;
+      z-index: 2;
+      svg {
+        // height: 100%;
+        width: 95px;
+        margin-right: 25px;
+      }
+      p {
+        font-size: 2.4rem;
+        margin-top: 20px;
+        color: #fff;
+      }
+    }
+    .app_all_input {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+      gap: 20px;
+      // align-items: end;
+    }
+
+    .form-grope {
+      display: flex;
+      flex-direction: column;
+      font-family: "AkrobatLight";
+      margin: 12px 0 0 0;
+      width: 100%;
+      label {
+        font-size: 1rem;
+        color: #fff;
+        opacity: 60%;
+        span {
+          color: #fff;
+        }
+      }
+      input {
+        padding: 25px;
+        border-radius: 20px;
+        border: none;
+        background-color: #fff;
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+        outline: none;
+        &::placeholder {
+          color: #595959;
+          opacity: 30%;
+        }
+      }
+    }
+    button {
+      background-color: #0e5524;
+      color: #fff;
+      padding: 27.5px 50px;
+      margin-left: 20px;
+      max-height: 81px;
+      border: none;
+      transition: all ease-in-out 0.4s;
+      font-size: 1.3rem;
+      font-family: "AkrobatLight";
+      border-radius: 20px;
+      height: fit-content;
+      &:hover {
+        box-shadow: 0 0 10px 0px #9cbe12;
+      }
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------------
+  start responsive page about 
+-------------------------------------------------------------------------------*/
+@media all and (max-width: 1199px) {
+  #news_{
+    padding-top: 50px;
+  }
+  #news_ .left_section .title {
+    font-size: 40px;
+  }
+  #news_ .perantImg img {
+    height: 400px;
+  }
+}
+@media all and (max-width: 991px) {
+  #news_{
+    padding-top: 0;
+  }
+}
+@media all and (max-width: 767px) {
+  #news_ .perantImg img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media all and (max-width: 400px) {
+  .hero_container {
+    margin-top: 180px;
+  }
+}
+

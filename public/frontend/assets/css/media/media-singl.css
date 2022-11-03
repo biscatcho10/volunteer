@@ -1,0 +1,177 @@
+p {
+  font-family: "AkrobatLight";
+}
+
+body[dirPage="1"] p {
+  line-height: 1 !important;
+}
+
+.hero_container {
+  margin-bottom: -100px;
+}
+
+.clouds.left {
+  left: -400px;
+  top: 275px;
+  height: 100%;
+  width: 1500px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+.clouds.right {
+  right: -300px;
+  bottom: 160px;
+  height: 800px;
+  width: 1200px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+.title_card {
+  margin-left: 20px;
+  font-family: "AkrobatSemiBold";
+  font-size: 1.5rem;
+  color: #f09f1d;
+}
+
+#media_card .row {
+  row-gap: 80px;
+}
+#media_card .my_Card {
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fff;
+  height: 100%;
+}
+#media_card .my_Card .top_card {
+  position: relative;
+}
+#media_card .my_Card .top_card img {
+  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+  transition: all ease-in-out 0.33s;
+}
+#media_card .my_Card .app_text {
+  min-height: 200px;
+  padding: 40px 50px;
+}
+#media_card .my_Card .app_text p {
+  transition: all ease-in-out 0.33s;
+  font-size: 1.2rem;
+  color: #828282;
+}
+#media_card .my_Card:hover .top_card img {
+  filter: grayscale(0%);
+}
+#media_card .my_Card:hover .app_text p {
+  color: #f09f1d;
+}
+
+.Pagination {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Pagination i {
+  color: #9cbe12;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.Pagination i:hover {
+  color: #ffa800;
+}
+.Pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.Pagination ul li {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  color: #9cbe12;
+  font-family: "Montserrat-Medium";
+}
+.Pagination ul li:hover {
+  color: #ffa800;
+}
+.Pagination ul li.active {
+  color: #ffa800;
+}
+
+#Subscribe {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+#Subscribe form {
+  padding: 30px 60px;
+  position: relative;
+}
+#Subscribe form .backgrouend_contact {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+  background-color: #9cbe12;
+  border-radius: 25px;
+  z-index: -1;
+  overflow: hidden;
+}
+#Subscribe form .backgrouend_contact::before {
+  content: "";
+  position: absolute;
+  background: url("../../svg/Subscribe.svg") center;
+  mix-blend-mode: multiply;
+  inset: 0;
+  background-size: 150%;
+  opacity: 30%;
+}
+#Subscribe form .backgrouend_contact::after {
+  content: "";
+  position: absolute;
+  mix-blend-mode: color;
+  inset: 0;
+}
+#Subscribe form .textAndIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+#Subscribe form .textAndIcon svg {
+  width: 95px;
+  margin-right: 25px;
+}
+#Subscribe form .textAndIcon p {
+  font-size: 2.4rem;
+  margin-top: 20px;
+  color: #fff;
+}
+#Subscribe form .app_all_input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+@media all and (max-width: 480px) {
+  #media_card .my_Card .top_card img {
+    width: 90vw;
+    height: 90vw;
+    max-width: none;
+  }
+}/*# sourceMappingURL=media-singl.css.map */

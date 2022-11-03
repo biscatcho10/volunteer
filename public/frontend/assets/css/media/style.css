@@ -1,0 +1,301 @@
+p {
+  font-family: "AkrobatLight";
+}
+
+.hero_container {
+  margin-bottom: -100px;
+}
+
+.clouds.left {
+  left: -400px;
+  top: -500px;
+  height: 100%;
+  width: 1500px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+.clouds.right {
+  right: -300px;
+  bottom: 160px;
+  height: 800px;
+  width: 1200px;
+  background-image: url("../../svg/missionClouds.svg");
+}
+
+#media .catalog {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+#media .singl {
+  display: flex;
+  align-items: center;
+}
+#media .singl .content_ {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 100px;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 19px 211px 211px 19px;
+  background: url("../../images/img_video.jpg") center no-repeat;
+  background-size: cover !important;
+  width: 60%;
+  font-size: 20px;
+}
+#media .singl .content_ .text_title, #media .singl .content_ .icon {
+  position: relative;
+  z-index: 3;
+}
+#media .singl .content_ .icon {
+  transition: all ease-in-out 0.43s;
+}
+#media .singl .content_ .icon img {
+  height: 4.5em;
+}
+#media .singl .content_ .text_title {
+  font-size: 2.7em;
+  font-family: "AkrobatSemiBold";
+  color: #fff;
+  text-transform: uppercase;
+}
+#media .singl .content_ .text_title span {
+  display: table-caption;
+  opacity: 0;
+  transition: all ease-in-out 0.33s;
+}
+#media .singl .content_::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  left: -30px;
+  background: #f09f1d;
+  opacity: 70%;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+#media .singl .content_::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 30%;
+  z-index: 1;
+}
+#media .singl:hover .content_::before {
+  transform: scale(60);
+}
+#media .singl:hover .content_ .icon {
+  opacity: 100%;
+}
+#media .singl:hover .content_ .text_title span {
+  opacity: 100%;
+}
+#media .singl:hover .content_ .text_title span:last-child {
+  transition: all ease-in-out 1.5s;
+}
+#media .singl:hover .text_sec h3 {
+  color: #f09f1d;
+}
+#media .singl .text_sec {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 40%;
+  padding: 0 60px;
+}
+#media .singl .text_sec h3 {
+  transition: all ease-in-out 0.33s;
+  color: #0e5524;
+  font-family: "AkrobatSemiBold";
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 110px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  display: table-caption;
+}
+#media .singl .text_sec p {
+  color: #828282;
+  font-family: "AkrobatRegular";
+  flex: 1;
+  text-align: justify;
+}
+#media .singl:nth-child(2n+2) .content_ {
+  order: 2;
+  border-radius: 211px 19px 19px 211px;
+}
+#media .singl:nth-child(2n+2) .content_::before {
+  left: auto;
+  right: 0;
+}
+#media .singl:nth-child(2n+2) .text_sec h3 {
+  order: 2;
+}
+
+#Subscribe {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+#Subscribe form {
+  padding: 30px 60px;
+  position: relative;
+}
+#Subscribe form .backgrouend_contact {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+  background-color: #9cbe12;
+  border-radius: 25px;
+  z-index: -1;
+  overflow: hidden;
+}
+#Subscribe form .backgrouend_contact::before {
+  content: "";
+  position: absolute;
+  background: url("../../svg/Subscribe.svg") center;
+  mix-blend-mode: multiply;
+  inset: 0;
+  background-size: 150%;
+  opacity: 30%;
+}
+#Subscribe form .backgrouend_contact::after {
+  content: "";
+  position: absolute;
+  mix-blend-mode: color;
+  inset: 0;
+}
+#Subscribe form .textAndIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+#Subscribe form .textAndIcon svg {
+  width: 95px;
+  margin-right: 25px;
+}
+#Subscribe form .textAndIcon p {
+  font-size: 2.4rem;
+  margin-top: 20px;
+  color: #fff;
+}
+#Subscribe form .app_all_input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+body[dirPage="1"] #media .singl .content_ {
+  border-radius: 211px 19px 19px 211px;
+  padding-right: 100px;
+  padding-left: 0;
+}
+body[dirPage="1"] #media .singl:nth-child(2n+2) .content_ {
+  border-radius: 19px 211px 211px 19px;
+}
+
+@media all and (max-width: 1199px) {
+  .hero_container .left_img {
+    top: 250px;
+    left: -700px;
+  }
+  #media .singl:nth-child(2n+2) .text_sec h3 {
+    order: 1;
+  }
+  #media .singl:nth-child(2n+2) .text_sec p {
+    order: 2;
+  }
+  #media .singl .content_ {
+    height: 300px;
+    font-size: 15px;
+  }
+  #media .singl .text_sec > * {
+    width: 100% !important;
+  }
+  #media .singl:nth-child(2n+2) .text_sec > * {
+    text-align: right;
+  }
+  body[dirPage="1"] #media .singl:nth-child(2n+2) .text_sec > * {
+    text-align: left;
+  }
+}
+@media all and (max-width: 991px) {
+  #media .singl {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  #media .singl .content_ {
+    height: 250px;
+    padding-left: 70px;
+    font-size: 12px;
+  }
+  #media .singl .text_sec {
+    padding: 0px;
+  }
+}
+@media all and (max-width: 767px) {
+  #media .singl {
+    flex-direction: column;
+  }
+  #media .singl:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  #media .singl .content_, #media .singl .text_sec {
+    width: 100%;
+  }
+  #media .singl .content_ {
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px 20px 0 0 !important;
+    order: 0 !important;
+    padding: 20px !important;
+  }
+  #media .singl .text_sec {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px !important;
+    height: 200px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  #media .singl .text_sec > * {
+    text-align: left !important;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #media .singl .text_sec h3 {
+    flex: 0;
+    margin-bottom: 15px;
+  }
+  #media .singl .text_sec h3 br {
+    display: none;
+  }
+  #media .singl .text_sec p {
+    flex: 1;
+  }
+  #media .singl .content_ .icon {
+    opacity: 0;
+  }
+}
+@media all and (max-width: 400px) {
+  #media .singl .content_ {
+    font-size: 9px;
+  }
+}/*# sourceMappingURL=style.css.map */
