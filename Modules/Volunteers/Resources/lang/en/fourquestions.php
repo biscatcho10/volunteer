@@ -2,7 +2,7 @@
 
 return [
     'singular' => 'Option',
-    'plural' => 'Question One',
+    'plural' => 'Question Four',
     'empty' => 'There are no Options yet.',
     'count' => 'Options count',
     'search' => 'Search',

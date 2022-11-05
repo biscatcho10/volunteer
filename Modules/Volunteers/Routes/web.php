@@ -16,4 +16,7 @@ Route::middleware('dashboard')->prefix('dashboard')->as('dashboard.')->group(fun
     Route::resource('volunteers', 'VolunteersController');
     Route::resource('fields', 'FieldsController');
     Route::resource('categories', 'CategoriesController');
+    Route::resource('fourquestions', 'FourQuestionController');
+    Route::resource('fivequestions', 'FiveQuestionController');
+    Route::resource('sixquestions', 'SixQuestionController');
 });

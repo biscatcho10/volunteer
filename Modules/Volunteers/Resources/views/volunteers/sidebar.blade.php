@@ -33,6 +33,13 @@
             'isActive' => request()->routeIs('*reasons.index'),
             'module' => 'HowKnow',
         ],
+             [
+            'name' => trans('volunteers::fourquestions.plural'),
+            'url' => route('dashboard.fourquestions.index'),
+            'can' => ['permission' => 'read_volunteers'],
+            'isActive' => request()->routeIs('*fourquestions.index'),
+            'module' => 'Volunteers',
+        ],
         [
             'name' => trans('volunteers::volunteers.questions'),
             'url' => route('dashboard.volunteers.questions'),
