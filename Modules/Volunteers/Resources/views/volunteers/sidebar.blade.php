@@ -33,11 +33,25 @@
             'isActive' => request()->routeIs('*reasons.index'),
             'module' => 'HowKnow',
         ],
-             [
+        [
             'name' => trans('volunteers::fourquestions.plural'),
             'url' => route('dashboard.fourquestions.index'),
             'can' => ['permission' => 'read_volunteers'],
             'isActive' => request()->routeIs('*fourquestions.index'),
+            'module' => 'Volunteers',
+        ],
+        [
+            'name' => trans('volunteers::fivequestions.plural'),
+            'url' => route('dashboard.fivequestions.index'),
+            'can' => ['permission' => 'read_volunteers'],
+            'isActive' => request()->routeIs('*fivequestions.index'),
+            'module' => 'Volunteers',
+        ],
+        [
+            'name' => trans('volunteers::sixquestions.plural'),
+            'url' => route('dashboard.sixquestions.index'),
+            'can' => ['permission' => 'read_volunteers'],
+            'isActive' => request()->routeIs('*sixquestions.index'),
             'module' => 'Volunteers',
         ],
         [

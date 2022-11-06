@@ -8,6 +8,9 @@ use Illuminate\Routing\Controller;
 use Modules\HowKnow\Entities\Reason;
 use Modules\Volunteers\Entities\Category;
 use Modules\Volunteers\Entities\Field;
+use Modules\Volunteers\Entities\QuestionFive;
+use Modules\Volunteers\Entities\QuestionFour;
+use Modules\Volunteers\Entities\QuestionSix;
 use Modules\Volunteers\Repositories\VolunteerRepository;
 use Modules\Volunteers\Entities\Volunteer;
 use Modules\Volunteers\Http\Requests\VolunteerRequest;
@@ -56,7 +59,10 @@ class VolunteersController extends Controller
         $fields = Field::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
         $reasons = Reason::listsTranslations('reason', 'id')->pluck('reason', 'id')->toArray();
         $categories = Category::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
-        return view('volunteers::volunteers.create', compact('fields', 'reasons', 'categories'));
+        $questionFour = QuestionFour::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionFive = QuestionFive::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionSix = QuestionSix::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        return view('volunteers::volunteers.create', compact('fields', 'reasons', 'categories', 'questionFour', 'questionFive', 'questionSix'));
     }
 
     /**
@@ -94,7 +100,10 @@ class VolunteersController extends Controller
         $fields = Field::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
         $reasons = Reason::listsTranslations('reason', 'id')->pluck('reason', 'id')->toArray();
         $categories = Category::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
-        return view('volunteers::volunteers.edit', compact('volunteer', 'fields', 'reasons', 'categories'));
+        $questionFour = QuestionFour::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionFive = QuestionFive::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionSix = QuestionSix::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        return view('volunteers::volunteers.edit', compact('volunteer', 'fields', 'reasons', 'categories','questionFour', 'questionFive', 'questionSix'));
     }
 
     /**

@@ -5,30 +5,30 @@ namespace Modules\Volunteers\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
-use Modules\Volunteers\Entities\Category;
+use Modules\Volunteers\Entities\QuestionSix;
 use Modules\Volunteers\Http\Requests\CategoryRequest;
-use Modules\Volunteers\Repositories\CategoryRepository;
+use Modules\Volunteers\Repositories\SixRepository;
 
 class SixQuestionController extends Controller
 {
     use AuthorizesRequests, ValidatesRequests;
 
     /**
-     * @var CategoryRepository
+     * @var sixRepository
      */
     private $repository;
 
     /**
      * VolunteerController constructor.
-     * @param CategoryRepository $repository
+     * @param sixRepository $repository
      */
-    public function __construct(CategoryRepository $repository)
+    public function __construct(SixRepository $repository)
     {
-        $this->middleware('permission:read_categories')->only(['index']);
-        $this->middleware('permission:create_categories')->only(['create', 'store']);
-        $this->middleware('permission:update_categories')->only(['edit', 'update']);
-        $this->middleware('permission:delete_categories')->only(['destroy']);
-        $this->middleware('permission:show_categories')->only(['show']);
+        $this->middleware('permission:read_volunteers')->only(['index']);
+        $this->middleware('permission:create_volunteers')->only(['create', 'store']);
+        $this->middleware('permission:update_volunteers')->only(['edit', 'update']);
+        $this->middleware('permission:delete_volunteers')->only(['destroy']);
+        $this->middleware('permission:show_volunteers')->only(['show']);
         $this->repository = $repository;
     }
 
@@ -38,9 +38,9 @@ class SixQuestionController extends Controller
      */
     public function index()
     {
-        $categories = $this->repository->all();
+        $questions = $this->repository->all();
 
-        return view('volunteers::categories.index', compact('categories'));
+        return view('volunteers::sixquestions.index', compact('questions'));
     }
 
     /**
@@ -49,7 +49,7 @@ class SixQuestionController extends Controller
      */
     public function create()
     {
-        return view('volunteers::categories.create');
+        return view('volunteers::sixquestions.create');
     }
 
     /**
@@ -59,60 +59,64 @@ class SixQuestionController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        $category = $this->repository->create($request->all());
+        $question = $this->repository->create($request->all());
 
-        flash(trans('volunteers::categories.messages.created'))->success();
+        flash(trans('volunteers::sixquestions.messages.created'))->success();
 
-        return redirect()->route('dashboard.categories.show', $category);
+        return redirect()->route('dashboard.sixquestions.show', $question);
     }
 
     /**
      * Show the specified resource.
-     * @param Category $category
+     * @param QuestionSix $sixquestion
      * @return Factory|View
      */
-    public function show(Category $category)
+    public function show(QuestionSix $sixquestion)
     {
-        $category = $this->repository->find($category);
-        return view('volunteers::categories.show', compact('category'));
+        $question = $sixquestion;
+        $question = $this->repository->find($question);
+        return view('volunteers::sixquestions.show', compact('question'));
     }
 
     /**
      * Show the form for editing the specified resource.
-     * @param Category $category
+     * @param QuestionSix $sixquestion
      * @return Factory|View
      */
-    public function edit(Category $category)
+    public function edit(QuestionSix $sixquestion)
     {
-        return view('volunteers::categories.edit', compact('category'));
+        $question = $sixquestion;
+        return view('volunteers::sixquestions.edit', compact('question'));
     }
 
     /**
      * Update the specified resource in storage.
      * @param CategoryRequest $request
-     * @param Category $category
+     * @param QuestionSix $sixquestion
      * @return RedirectResponse
      */
-    public function update(CategoryRequest $request, Category $category)
+    public function update(CategoryRequest $request, QuestionSix $sixquestion)
     {
-        $category = $this->repository->update($category, $request->all());
+        $question = $sixquestion;
+        $question = $this->repository->update($question, $request->all());
 
-        flash(trans('volunteers::categories.messages.updated'))->success();
+        flash(trans('volunteers::sixquestions.messages.updated'))->success();
 
-        return redirect()->route('dashboard.categories.show', $category);
+        return redirect()->route('dashboard.sixquestions.show', $question);
     }
 
     /**
      * Remove the specified resource from storage.
-     * @param Category $category
+     * @param QuestionSix $sixquestion
      * @return RedirectResponse
      */
-    public function destroy(Category $category)
+    public function destroy(QuestionSix $sixquestion)
     {
-        $this->repository->delete($category);
+        $question = $sixquestion;
+        $this->repository->delete($question);
 
-        flash(trans('volunteers::categories.messages.deleted'))->error();
+        flash(trans('volunteers::sixquestions.messages.deleted'))->error();
 
-        return redirect()->route('dashboard.categories.index');
+        return redirect()->route('dashboard.sixquestions.index');
     }
 }

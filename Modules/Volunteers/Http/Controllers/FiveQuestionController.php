@@ -6,24 +6,24 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 use Modules\Volunteers\Entities\Category;
-use Modules\Volunteers\Entities\QuestionFour;
+use Modules\Volunteers\Entities\QuestionFive;
 use Modules\Volunteers\Http\Requests\CategoryRequest;
-use Modules\Volunteers\Repositories\FourRepository;
+use Modules\Volunteers\Repositories\FiveRepository;
 
-class FourQuestionController extends Controller
+class FiveQuestionController extends Controller
 {
     use AuthorizesRequests, ValidatesRequests;
 
     /**
-     * @var FourRepository
+     * @var FiveRepository
      */
     private $repository;
 
     /**
      * VolunteerController constructor.
-     * @param FourRepository $repository
+     * @param FiveRepository $repository
      */
-    public function __construct(FourRepository $repository)
+    public function __construct(FiveRepository $repository)
     {
         $this->middleware('permission:read_volunteers')->only(['index']);
         $this->middleware('permission:create_volunteers')->only(['create', 'store']);
@@ -41,7 +41,7 @@ class FourQuestionController extends Controller
     {
         $questions = $this->repository->all();
 
-        return view('volunteers::fourquestions.index', compact('questions'));
+        return view('volunteers::fivequestions.index', compact('questions'));
     }
 
     /**
@@ -50,7 +50,7 @@ class FourQuestionController extends Controller
      */
     public function create()
     {
-        return view('volunteers::fourquestions.create');
+        return view('volunteers::fivequestions.create');
     }
 
     /**
@@ -62,58 +62,62 @@ class FourQuestionController extends Controller
     {
         $question = $this->repository->create($request->all());
 
-        flash(trans('volunteers::categories.messages.created'))->success();
+        flash(trans('volunteers::fivequestions.messages.created'))->success();
 
-        return redirect()->route('dashboard.categories.show', $question);
+        return redirect()->route('dashboard.fivequestions.show', $question);
     }
 
     /**
      * Show the specified resource.
-     * @param QuestionFour $question
+     * @param QuestionFive $fivequestion
      * @return Factory|View
      */
-    public function show(QuestionFour $question)
+    public function show(QuestionFive $fivequestion)
     {
+        $question = $fivequestion;
         $question = $this->repository->find($question);
-        return view('volunteers::fourquestions.show', compact('category'));
+        return view('volunteers::fivequestions.show', compact('question'));
     }
 
     /**
      * Show the form for editing the specified resource.
-     * @param QuestionFour $question
+     * @param QuestionFive $fivequestion
      * @return Factory|View
      */
-    public function edit(QuestionFour $question)
+    public function edit(QuestionFive $fivequestion)
     {
-        return view('volunteers::fourquestions.edit', compact('category'));
+        $question = $fivequestion;
+        return view('volunteers::fivequestions.edit', compact('question'));
     }
 
     /**
      * Update the specified resource in storage.
      * @param CategoryRequest $request
-     * @param QuestionFour $question
+     * @param QuestionFive $fivequestion
      * @return RedirectResponse
      */
-    public function update(CategoryRequest $request, QuestionFour $question)
+    public function update(CategoryRequest $request, QuestionFive $fivequestion)
     {
+        $question = $fivequestion;
         $question = $this->repository->update($question, $request->all());
 
-        flash(trans('volunteers::categories.messages.updated'))->success();
+        flash(trans('volunteers::fivequestions.messages.updated'))->success();
 
-        return redirect()->route('dashboard.categories.show', $question);
+        return redirect()->route('dashboard.fivequestions.show', $question);
     }
 
     /**
      * Remove the specified resource from storage.
-     * @param QuestionFour $question
+     * @param QuestionFive $fivequestion
      * @return RedirectResponse
      */
-    public function destroy(QuestionFour $question)
+    public function destroy(QuestionFive $fivequestion)
     {
+        $question = $fivequestion;
         $this->repository->delete($question);
 
-        flash(trans('volunteers::categories.messages.deleted'))->error();
+        flash(trans('volunteers::fivequestions.messages.deleted'))->error();
 
-        return redirect()->route('dashboard.categories.index');
+        return redirect()->route('dashboard.fivequestions.index');
     }
 }
