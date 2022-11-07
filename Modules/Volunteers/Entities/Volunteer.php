@@ -31,6 +31,9 @@ class Volunteer extends Model
         'other_sector',
         // 'volunteer_category',
         'category_exp',
+        'question4_exp',
+        'question5_exp',
+        'question6_exp',
         'favorite_time',
         'has_car',
     ];
@@ -70,6 +73,33 @@ class Volunteer extends Model
     }
 
 
+    /**
+     * @return BelongsToMany
+     */
+    public function question_four()
+    {
+        return $this->belongsToMany(QuestionFour::class, 'question_four_volunteers');
+    }
+
+
+    /**
+     * @return BelongsToMany
+     */
+    public function question_five()
+    {
+        return $this->belongsToMany(QuestionFive::class, 'question_five_volunteers');
+    }
+
+
+    /**
+     * @return BelongsToMany
+     */
+    public function question_six()
+    {
+        return $this->belongsToMany(QuestionSix::class, 'question_six_volunteers');
+    }
+
+
     // get how know
     public function getHowKnowAttribute()
     {
@@ -93,5 +123,32 @@ class Volunteer extends Model
             return $this->category_exp ;
         else
         return implode(" - ", $this->categories()->listsTranslations('name')->pluck('name')->toArray());
+    }
+
+    // get volunteer question_four
+    public function getQuesFourAttribute()
+    {
+        if (in_array(1, $this->question_four->pluck('id')->toArray()))
+            return $this->question4_exp ;
+        else
+        return implode(" - ", $this->question_four()->listsTranslations('name')->pluck('name')->toArray());
+    }
+
+    // get volunteer question_five
+    public function getQuesFiveAttribute()
+    {
+        if (in_array(1, $this->question_five->pluck('id')->toArray()))
+            return $this->question5_exp ;
+        else
+        return implode(" - ", $this->question_five()->listsTranslations('name')->pluck('name')->toArray());
+    }
+
+    // get volunteer question_six
+    public function getQuesSixAttribute()
+    {
+        if (in_array(1, $this->question_six->pluck('id')->toArray()))
+            return $this->question6_exp ;
+        else
+        return implode(" - ", $this->question_six()->listsTranslations('name')->pluck('name')->toArray());
     }
 }

@@ -47,6 +47,9 @@ class VolunteerRepository implements CrudRepository
         $volunteer->reasons()->attach($data['how_know_id']);
         $volunteer->fields()->attach($data['field_id']);
         $volunteer->categories()->attach($data['volunteer_category']);
+        $volunteer->question_four()->attach($data['question_four']);
+        $volunteer->question_five()->attach($data['question_five']);
+        $volunteer->question_six()->attach($data['question_six']);
 
         return $volunteer;
     }
@@ -82,6 +85,9 @@ class VolunteerRepository implements CrudRepository
             $volunteer->reasons()->sync($data['how_know_id']);
             $volunteer->fields()->sync($data['field_id']);
             $volunteer->categories()->sync($data['volunteer_category']);
+            $volunteer->question_four()->sync($data['question_four']);
+            $volunteer->question_five()->sync($data['question_five']);
+            $volunteer->question_six()->sync($data['question_six']);
         }
 
         return $volunteer;

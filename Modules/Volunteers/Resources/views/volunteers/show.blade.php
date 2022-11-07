@@ -103,6 +103,18 @@
                                 <th width="200">@lang('volunteers::volunteers.attributes.volunteer_category')</th>
                                 <td>{{ $volunteer->category }}</td>
                             </tr>
+                            <tr>
+                                <th width="200">{{ __('Question Four') }}</th>
+                                <td>{{ $volunteer->ques_four }}</td>
+                            </tr>
+                            <tr>
+                                <th width="200">{{ __('Question Five') }}</th>
+                                <td>{{ $volunteer->ques_five }}</td>
+                            </tr>
+                            <tr>
+                                <th width="200">{{ __('Question Six') }}</th>
+                                <td>{{ $volunteer->ques_six }}</td>
+                            </tr>
 
                         </tbody>
                     </table>
