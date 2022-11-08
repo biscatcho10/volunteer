@@ -31,7 +31,6 @@ class CategoryTableSeeder extends Seeder
                 'en' => 'Adults (Male / Female)',
                 'ar' => 'البالغين (ذكور / إناث)',
             ],
-
         ];
 
 

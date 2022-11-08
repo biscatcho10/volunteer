@@ -72,14 +72,26 @@
                     <table class="table table-middle">
                         <tbody>
                             <tr>
-                                <th width="200">@lang('volunteers::volunteers.attributes.how_know_id')</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q1_' . $lang))
+                                        {{ Settings::get('volun_q1_' . $lang) }}
+                                    @else
+                                        Question 1
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->how_know }}</td>
                             </tr>
                             <tr>
-                                <th width="200">@lang('volunteers::volunteers.attributes.field_id')</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q2_' . $lang))
+                                        {{ Settings::get('volun_q2_' . $lang) }}
+                                    @else
+                                        Question 2
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->field }}</td>
                             </tr>
-                            <tr>
+                            {{-- <tr>
                                 <th width="200">@lang('volunteers::volunteers.attributes.skills')</th>
                                 <td>{!! $volunteer->skills !!}</td>
                             </tr>
@@ -98,21 +110,45 @@
                             <tr>
                                 <th width="200">@lang('volunteers::volunteers.attributes.has_car')</th>
                                 <td>{{ $volunteer->has_car ? __('Yes') : __('No') }}</td>
-                            </tr>
+                            </tr> --}}
                             <tr>
-                                <th width="200">@lang('volunteers::volunteers.attributes.volunteer_category')</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q3_' . $lang))
+                                        {{ Settings::get('volun_q3_' . $lang) }}
+                                    @else
+                                        Question 3
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->category }}</td>
                             </tr>
                             <tr>
-                                <th width="200">{{ __('Question Four') }}</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q4_' . $lang))
+                                        {{ Settings::get('volun_q4_' . $lang) }}
+                                    @else
+                                        Question 4
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->ques_four }}</td>
                             </tr>
                             <tr>
-                                <th width="200">{{ __('Question Five') }}</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q5_' . $lang))
+                                        {{ Settings::get('volun_q5_' . $lang) }}
+                                    @else
+                                        Question 5
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->ques_five }}</td>
                             </tr>
                             <tr>
-                                <th width="200">{{ __('Question Six') }}</th>
+                                <th width="200">
+                                    @if (Settings::get('volun_q6_' . $lang))
+                                        {{ Settings::get('volun_q6_' . $lang) }}
+                                    @else
+                                        Question 6
+                                    @endif
+                                </th>
                                 <td>{{ $volunteer->ques_six }}</td>
                             </tr>
 

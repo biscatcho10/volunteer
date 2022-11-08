@@ -92,7 +92,7 @@
                         <!-- start all input questions -->
                         <div id="questions">
                             <!-- singl question text -->
-                            <div class="singl_question singl_question_text">
+                            {{-- <div class="singl_question singl_question_text">
                                 <h5>
                                     @if (Settings::get('volun_q1_' . $lang))
                                         {{ Settings::get('volun_q1_' . $lang) }}
@@ -117,9 +117,9 @@
                                     <label for="">4.</label>
                                     <input type="text" name="skills[]">
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- singl question text -->
-                            <div class="singl_question singl_question_text">
+                            {{-- <div class="singl_question singl_question_text">
                                 <h5>
                                     @if (Settings::get('volun_q2_' . $lang))
                                         {{ Settings::get('volun_q2_' . $lang) }}
@@ -144,29 +144,29 @@
                                     <label for="">4.</label>
                                     <input type="text" name="experiences[]">
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- singl question checkbox -->
                             <div class="singl_question question_checkbox" requiredQuestion>
                                 <h5>
-                                    @if (Settings::get('volun_q3_' . $lang))
-                                        {{ Settings::get('volun_q3_' . $lang) }}
+                                    @if (Settings::get('volun_q1_' . $lang))
+                                        {{ Settings::get('volun_q1_' . $lang) }}
                                     @else
-                                        Indicate one sector or more you would like to volunteer in
+                                        Question 1
                                     @endif
                                 </h5>
 
                                 @forelse ($fields as $key => $item)
                                     @if ($key != 1)
                                         <!-- singl checkbox -->
-                                    <div class="singl_checkbox d-flex align-items-center">
-                                        <label class="checkbox bounce mb-0 mr-2">
-                                            <input type="checkbox" name="field_id[]" value="{{ $key }}">
-                                            <svg viewBox="0 0 21 21">
-                                                <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
-                                            </svg>
-                                        </label>
-                                        <span>{{ $item }}</span>
-                                    </div>
+                                        <div class="singl_checkbox d-flex align-items-center">
+                                            <label class="checkbox bounce mb-0 mr-2">
+                                                <input type="checkbox" name="field_id[]" value="{{ $key }}">
+                                                <svg viewBox="0 0 21 21">
+                                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                </svg>
+                                            </label>
+                                            <span>{{ $item }}</span>
+                                        </div>
                                     @endif
                                 @empty
                                 @endforelse
@@ -189,10 +189,10 @@
                             <!-- singl question checkbox -->
                             <div class="singl_question question_checkbox one_column" requiredQuestion>
                                 <h5>
-                                    @if (Settings::get('volun_q4_' . $lang))
-                                        {{ Settings::get('volun_q4_' . $lang) }}
+                                    @if (Settings::get('volun_q2_' . $lang))
+                                        {{ Settings::get('volun_q2_' . $lang) }}
                                     @else
-                                        The preferred group to work with through volunteering
+                                        Question 2
                                     @endif
                                 </h5>
 
@@ -227,7 +227,7 @@
                                 </div>
                             </div>
                             <!-- singl question text -->
-                            <div class="singl_question singl_question_text">
+                            {{-- <div class="singl_question singl_question_text">
                                 <h5>
                                     @if (Settings::get('volun_q5_' . $lang))
                                         {{ Settings::get('volun_q5_' . $lang) }}
@@ -242,9 +242,9 @@
                                 <div class="input_">
                                     <input type="text" name="favorite_time[]">
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- singl question text -->
-                            <div class="singl_question singl_question_text">
+                            {{-- <div class="singl_question singl_question_text">
                                 <h5>
                                     @if (Settings::get('volun_q6_' . $lang))
                                         {{ Settings::get('volun_q6_' . $lang) }}
@@ -258,14 +258,14 @@
                                 <div class="input_">
                                     <input type="text" name="has_car">
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- singl question checkbox -->
                             <div class="singl_question question_checkbox">
                                 <h5>
-                                    @if (Settings::get('volun_q7_' . $lang))
-                                        {{ Settings::get('volun_q7_' . $lang) }}
+                                    @if (Settings::get('volun_q3_' . $lang))
+                                        {{ Settings::get('volun_q3_' . $lang) }}
                                     @else
-                                        How did you know about the association?
+                                        Question 3
                                     @endif
                                 </h5>
 
@@ -284,7 +284,7 @@
                                 @endforelse
                             </div>
                             <!-- singl question text -->
-                            <div class="singl_question singl_question_text">
+                            {{-- <div class="singl_question singl_question_text">
                                 <h5>
                                     @if (Settings::get('volun_q8_' . $lang))
                                         {{ Settings::get('volun_q8_' . $lang) }}
@@ -298,7 +298,136 @@
                                 <div class="input_">
                                     <input type="text" name="motives[]">
                                 </div>
+                            </div> --}}
+
+
+                            <!-- singl question checkbox -->
+                            <div class="singl_question question_checkbox one_column" requiredQuestion>
+                                <h5>
+                                    @if (Settings::get('volun_q4_' . $lang))
+                                        {{ Settings::get('volun_q4_' . $lang) }}
+                                    @else
+                                        Question 4
+                                    @endif
+                                </h5>
+
+                                @foreach ($questionFour as $key => $question)
+                                    @if ($key != 1)
+                                        <!-- singl checkbox -->
+                                        <div class="singl_checkbox d-flex align-items-center">
+                                            <label class="checkbox bounce mb-0 mr-2">
+                                                <input type="checkbox" name="question_four[]"
+                                                    value="{{ $key }}">
+                                                <svg viewBox="0 0 21 21">
+                                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                </svg>
+                                            </label>
+                                            <span>{{ $question }}</span>
+                                        </div>
+                                    @endif
+                                @endforeach
+
+                                <!-- singl checkbox -->
+                                <div class="singl_checkbox flex-wrap d-flex align-items-center Other_checkbox">
+                                    <label class="checkbox bounce mb-0 mr-2">
+                                        <input type="checkbox" class="input_Other_checkbox" name="question_four"
+                                            value="1">
+                                        <svg viewBox="0 0 21 21">
+                                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                        </svg>
+                                    </label>
+                                    <span>{{ __('More explanation (if any)') }}</span>
+                                    <input class="w-100 inp_Other ml-4 mr-4 mt-2" type="text" name="question4_exp"
+                                        disabled requiredes="true">
+                                </div>
                             </div>
+
+
+                            <!-- singl question checkbox -->
+                            <div class="singl_question question_checkbox one_column" requiredQuestion>
+                                <h5>
+                                    @if (Settings::get('volun_q5_' . $lang))
+                                        {{ Settings::get('volun_q5_' . $lang) }}
+                                    @else
+                                        Question 5
+                                    @endif
+                                </h5>
+
+                                @foreach ($questionFive as $key => $question)
+                                    @if ($key != 1)
+                                        <!-- singl checkbox -->
+                                        <div class="singl_checkbox d-flex align-items-center">
+                                            <label class="checkbox bounce mb-0 mr-2">
+                                                <input type="checkbox" name="question_five[]"
+                                                    value="{{ $key }}">
+                                                <svg viewBox="0 0 21 21">
+                                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                </svg>
+                                            </label>
+                                            <span>{{ $question }}</span>
+                                        </div>
+                                    @endif
+                                @endforeach
+
+                                <!-- singl checkbox -->
+                                <div class="singl_checkbox flex-wrap d-flex align-items-center Other_checkbox">
+                                    <label class="checkbox bounce mb-0 mr-2">
+                                        <input type="checkbox" class="input_Other_checkbox" name="question_five"
+                                            value="1">
+                                        <svg viewBox="0 0 21 21">
+                                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                        </svg>
+                                    </label>
+                                    <span>{{ __('More explanation (if any)') }}</span>
+                                    <input class="w-100 inp_Other ml-4 mr-4 mt-2" type="text" name="question5_exp"
+                                        disabled requiredes="true">
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- singl question checkbox -->
+                            <div class="singl_question question_checkbox one_column" requiredQuestion>
+                                <h5>
+                                    @if (Settings::get('volun_q6_' . $lang))
+                                        {{ Settings::get('volun_q6_' . $lang) }}
+                                    @else
+                                        Question 6
+                                    @endif
+                                </h5>
+
+                                @foreach ($questionSix as $key => $question)
+                                    @if ($key != 1)
+                                        <!-- singl checkbox -->
+                                        <div class="singl_checkbox d-flex align-items-center">
+                                            <label class="checkbox bounce mb-0 mr-2">
+                                                <input type="checkbox" name="question_six[]"
+                                                    value="{{ $key }}">
+                                                <svg viewBox="0 0 21 21">
+                                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                </svg>
+                                            </label>
+                                            <span>{{ $question }}</span>
+                                        </div>
+                                    @endif
+                                @endforeach
+
+                                <!-- singl checkbox -->
+                                <div class="singl_checkbox flex-wrap d-flex align-items-center Other_checkbox">
+                                    <label class="checkbox bounce mb-0 mr-2">
+                                        <input type="checkbox" class="input_Other_checkbox" name="question_six"
+                                            value="1">
+                                        <svg viewBox="0 0 21 21">
+                                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                        </svg>
+                                    </label>
+                                    <span>{{ __('More explanation (if any)') }}</span>
+                                    <input class="w-100 inp_Other ml-4 mr-4 mt-2" type="text" name="question6_exp"
+                                        disabled requiredes="true">
+                                </div>
+                            </div>
+
                         </div>
                         <!-- / all input questions -->
 

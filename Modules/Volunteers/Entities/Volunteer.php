@@ -12,7 +12,7 @@ use Modules\Volunteers\Entities\Helpers\VolunteerHelper;
 
 class Volunteer extends Model
 {
-    use HasFactory, VolunteerHelper,Filterable;
+    use HasFactory, VolunteerHelper, Filterable;
 
     protected $fillable = [
         'name',
@@ -111,7 +111,7 @@ class Volunteer extends Model
     {
         if ($this->field_id == 1)
             return $this->other_sector;
-        else{
+        else {
             return implode(" - ", $this->fields()->listsTranslations('name')->pluck('name')->toArray());
         }
     }
@@ -120,35 +120,38 @@ class Volunteer extends Model
     public function getCategoryAttribute()
     {
         if (in_array(1, $this->categories->pluck('id')->toArray()))
-            return $this->category_exp ;
+            return $this->category_exp;
         else
-        return implode(" - ", $this->categories()->listsTranslations('name')->pluck('name')->toArray());
+            return implode(" - ", $this->categories()->listsTranslations('name')->pluck('name')->toArray());
     }
 
     // get volunteer question_four
     public function getQuesFourAttribute()
     {
-        if (in_array(1, $this->question_four->pluck('id')->toArray()))
-            return $this->question4_exp ;
+        $arr = $this->question_four->pluck('id')->toArray();
+        if (in_array(1, $arr) || empty($arr))
+            return $this->question4_exp;
         else
-        return implode(" - ", $this->question_four()->listsTranslations('name')->pluck('name')->toArray());
+            return implode(" - ", $this->question_four()->listsTranslations('name')->pluck('name')->toArray());
     }
 
     // get volunteer question_five
     public function getQuesFiveAttribute()
     {
-        if (in_array(1, $this->question_five->pluck('id')->toArray()))
-            return $this->question5_exp ;
+        $arr = $this->question_five->pluck('id')->toArray();
+        if (in_array(1, $arr) || empty($arr))
+            return $this->question5_exp;
         else
-        return implode(" - ", $this->question_five()->listsTranslations('name')->pluck('name')->toArray());
+            return implode(" - ", $this->question_five()->listsTranslations('name')->pluck('name')->toArray());
     }
 
     // get volunteer question_six
     public function getQuesSixAttribute()
     {
-        if (in_array(1, $this->question_six->pluck('id')->toArray()))
-            return $this->question6_exp ;
+        $arr = $this->question_six->pluck('id')->toArray();
+        if (in_array(1, $arr) || empty($arr))
+            return $this->question6_exp;
         else
-        return implode(" - ", $this->question_six()->listsTranslations('name')->pluck('name')->toArray());
+            return implode(" - ", $this->question_six()->listsTranslations('name')->pluck('name')->toArray());
     }
 }

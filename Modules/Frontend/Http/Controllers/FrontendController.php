@@ -26,6 +26,9 @@ use Modules\Settings\Entities\Subscriber;
 use Modules\Sliders\Entities\Slider;
 use Modules\Volunteers\Entities\Category;
 use Modules\Volunteers\Entities\Field;
+use Modules\Volunteers\Entities\QuestionFive;
+use Modules\Volunteers\Entities\QuestionFour;
+use Modules\Volunteers\Entities\QuestionSix;
 use Modules\Volunteers\Entities\Volunteer;
 
 class FrontendController extends Controller
@@ -209,6 +212,9 @@ class FrontendController extends Controller
         $fields = Field::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
         $reasons = Reason::listsTranslations('reason', 'id')->pluck('reason', 'id')->toArray();
         $categories = Category::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionFour = QuestionFour::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionFive = QuestionFive::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
+        $questionSix = QuestionSix::listsTranslations('name', 'id')->orderBy('id', 'DESC')->pluck('name', 'id')->toArray();
 
         $reasons = Reason::listsTranslations('reason')->pluck('reason', 'id')->toArray();
         $settings = AboutUs::first();
@@ -219,7 +225,10 @@ class FrontendController extends Controller
             'settings' => $settings,
             'fields' => $fields,
             'reasons' => $reasons,
-            'categories' => $categories
+            'categories' => $categories,
+            'questionFour' => $questionFour,
+            'questionFive' => $questionFive,
+            'questionSix' => $questionSix
         ]);
     }
 
@@ -234,7 +243,10 @@ class FrontendController extends Controller
             'address' => 'required|string|max:255',
             'dob' => 'required|date',
             'how_know_id' => 'required|exists:reasons,id',
-            'field_id' => 'required|array',
+            'field_id' => 'required',
+            'question_four' => 'required',
+            'question_five' => 'required',
+            'question_six' => 'required',
         ], [
             'name.required' => __('frontend::frontend.name_required'),
             'email.required' => __('frontend::frontend.email_required'),
@@ -254,16 +266,19 @@ class FrontendController extends Controller
             return redirect()->back();
         }
 
-        $inputs = $request->except('_token', 'skills', 'experiences', 'favorite_time', 'has_car', 'how_know_id', 'field_id', 'motivation');
-        $inputs['skills'] = implode(',', $request->skills);
-        $inputs['experiences'] = implode(',', $request->experiences);
-        $inputs['favorite_time'] = implode(',', $request->favorite_time);
-        $inputs['has_car'] = $request->has_car ? 1 : 0;
-        $inputs['motives'] = implode(',', $request->motives);
+        $inputs = $request->except('_token', 'how_know_id', 'field_id');
+        // $inputs['skills'] = implode(',', $request->skills);
+        // $inputs['experiences'] = implode(',', $request->experiences);
+        // $inputs['favorite_time'] = implode(',', $request->favorite_time);
+        // $inputs['has_car'] = $request->has_car ? 1 : 0;
+        // $inputs['motives'] = implode(',', $request->motives);
         $volunteer = Volunteer::create($inputs);
         $volunteer->reasons()->attach($request->how_know_id);
         $volunteer->fields()->attach($request->field_id);
         $volunteer->categories()->attach($request->volunteer_category);
+        $volunteer->question_four()->attach($request->question_four);
+        $volunteer->question_five()->attach($request->question_five);
+        $volunteer->question_six()->attach($request->question_six);
 
         try {
             // send mail to contact

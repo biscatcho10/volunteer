@@ -86,8 +86,9 @@ class VolunteersController extends Controller
      */
     public function show(Volunteer $volunteer)
     {
+        $lang = app()->getLocale();
         $volunteer = $this->repository->find($volunteer);
-        return view('volunteers::volunteers.show', compact('volunteer'));
+        return view('volunteers::volunteers.show', compact('volunteer', 'lang'));
     }
 
     /**

@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-6">
                         {{ BsForm::textarea('volun_q7_en')->value(Settings::get('volun_q7_en'))->rows(3)->label(__('Volunteer Question 7 (en)')) }}
                     </div>
@@ -102,7 +102,7 @@
                     <div class="col-6">
                         {{ BsForm::textarea('volun_q8_ar')->value(Settings::get('volun_q8_ar'))->rows(3)->label(__('Volunteer Question 8 (ar)')) }}
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 

@@ -76,7 +76,6 @@
 
 
         <label>{{ __('volunteers::volunteers.attributes.field_id') }}</label>
-
         <select name="field_id[]" id="field" class="form-control selectpicker" data-live-search="true"
             data-actions-box="true" multiple>
             @foreach ($fields as $id => $name)
@@ -91,7 +90,7 @@
 
     <div class="col-12 other_sector"
         @isset($volunteer)
-        @if ($volunteer->field_id == 1)
+        @if (in_array(1, $volunteer->fields->pluck('id')->toArray()))
             style="display: block;"
         @else
             style="display: none;"
